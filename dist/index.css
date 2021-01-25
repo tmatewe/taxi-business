@@ -1,0 +1,48 @@
+.link-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.lists {
+  float: left;
+}
+
+.lists a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.lists a:hover {
+  background-color: #111;
+}
+.lists a:active {
+  background-color: red;
+}
+.existing-user {
+  display: none;
+}
+.new-user {
+  display: none;
+}
+.main-buttons {
+  text-align: center;
+}
+.clients-btn {
+  text-align: center;
+}
+
+.add-client {
+  display: none;
+}
+.edit-client {
+  display: none;
+}
+.delete-client {
+  display: none;
+}

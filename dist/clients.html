@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <ul class="link-lists">
+      <li class="lists"><a class="active" href="#home">Home</a></li>
+      <li class="lists"><a href="#news">Reporting</a></li>
+      <li class="lists"><a href="#contact">Communication</a></li>
+      <li class="lists"><a href="#about">Admin</a></li>
+    </ul>
+    <br /><br />
+    <div class="clients-btn">
+      Client category:
+      <input type="text" placeholder="Company or individual" /><br /><br />
+      <button class="btn btn-dark addClient">Add client</button><br /><br />
+      <button class="btn btn-primary edit-clientBtn">Amend client</button
+      ><br /><br />
+      <button class="btn btn-danger delete-clientBtn">Delete client</button>
+    </div>
+    <div class="container add-client">
+      <h4>Fill the form to add a client</h4>
+      <form action="/landing.html">
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="First name"
+              name="first-name"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Surname"
+              name="Surname"
+            />
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Reference code"
+              name="reference-code"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              name="password"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+    <div class="container edit-client">
+      <h4>Fill the form to edit a client</h4>
+      <form action="/landing.html">
+        <div class="row">
+          <div class="col">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Surname"
+              name="Surname"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="reference code"
+              name="reference code"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+    <div class="container delete-client">
+      <h4>Fill the form to delete a client</h4>
+      <form action="/index.html">
+        <div class="row">
+          <div class="col">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Surname"
+              name="Surname"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="reference code"
+              name="reference code"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+    <script src="clients.js"></script>
+  </body>
+</html>
